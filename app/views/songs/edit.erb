@@ -1,15 +1,20 @@
+
+
 <form action="/update" method='post'>
-<label>Titel</label>
-<input type="text" name="title" value='<%= @song.title%>'>
+ <div align="center"> 
+  <label>Titel</label>
+  Update Title: <input type="text" name="title" value='<%= @song.title%>' >
 
-<label>Artist</label>
-<input type="text" name="artist" value='<%= @song.artist%>'>
+  <label>Artist</label>
+  Update Artist: <input type="text" name="artist" value='<%= @song.artist%>' id = "Artist Name">
 
-<label>Album</label>
-<input type="text" name="album" value='<%=@song.album%>'>
+  <label>Album</label>
+  Update Album: <input type="text" name="album" value='<%=@song.album%>'>
 
-<label>Genre</label>
-<input type="text" name="genre" value='<%= @song.genre%>'>
-<input type='hidden' name ="id" value='<%= @song.id%>'>
-<input type="submit">
+  <label>Genre</label>
+  Update Genre: <input type="text" name="genre" value='<%= @song.genre%>'>
+  
+  <input type='hidden' name ="id" value='<%= @song.id%>'>
+  Save Changes
+  <input type="submit" id="Save Changes">
 </form>

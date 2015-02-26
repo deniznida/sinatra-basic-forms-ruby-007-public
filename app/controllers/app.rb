@@ -23,7 +23,9 @@ class App < Sinatra::Base
     @song.genre = params[:genre] 
     @song.album = params[:album] 
     @song.save
-    redirect '/'
+    
+
+    redirect '/songs/'+ params[:id]
   end
 end
 
